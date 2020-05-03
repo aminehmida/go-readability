@@ -146,6 +146,7 @@ func getContent(srcPath string, metadataOnly bool) (string, error) {
 			"excerpt": article.Excerpt,
 			"image":   article.Image,
 			"favicon": article.Favicon,
+			"text":    article.TextContent,
 		}
 
 		prettyJSON, err := json.MarshalIndent(&metadata, "", "    ")
